@@ -4,21 +4,35 @@
     box-sizing: border-box;
 }
 
-header h1 {
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.title {
     font-family: 'Tilt Prism', cursive;
 }
 
-header, 
-section h2,
-section h3 {
+.destaque {
     font-family: 'Caprasimo', cursive;
+    padding-bottom: 16px;
+}
+
+#about {
+    margin-top: 24px;
 }
 
 body,
 input,
 textarea {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FBF8DD;
 }
+
 header {
     padding: 30px 0;
     background-color: rgb(185, 9, 9);
@@ -35,15 +49,8 @@ header nav li a {
     color: rgb(243, 243, 243);
     text-decoration: none;
 }
-.container {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 header .container {
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -52,11 +59,8 @@ section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-section .container {
     align-items: flex-start;
-}
+    }
 
 section {
     padding: 24px 0;
@@ -66,6 +70,7 @@ section h2 {
     margin-bottom: 16px;
     font-size: 32px;
 }
+
 .store-front {
     margin-right: 32px;
 }
@@ -109,16 +114,16 @@ section h3 {
 form button{
     background-color: rgb(185, 9, 9);
     color: #ffff;
-    border: none ;
+    border: none;
     cursor: pointer;
+    text-transform: uppercase;
+    padding: 16px;
 }
-
 form button:hover{
     background-color: rgb(228, 13, 13);
 }
-
 input:focus, textarea:focus {
-    outline-color: rgb(185, 9, 9);
+    outline-color: rgb(0, 0, 0);
 }
 
 .social-links img {
@@ -138,6 +143,9 @@ input:focus, textarea:focus {
     display: block;
 }
 
+.catalogo {
+    padding-bottom: 16px;
+}
 .albums {
     display: flex;
     align-items: center;
@@ -167,8 +175,84 @@ input:focus, textarea:focus {
 .albums p {
     color: #464545;
 }
+
 footer {
     background-color: rgb(185, 9, 9);
     color: #bdbdbd;
-    padding: 16px 0;
+    padding: 16px;
+    margin-bottom: -64px;
+}
+
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    .store-front {
+        max-width: 100%;
+        padding-bottom: 16px;
+        padding-top: 0;
+    }
+
+    .albums {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-methods {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
+    footer {
+        background-color: rgb(185, 9, 9);
+        color: #bdbdbd;
+        padding: 16px;
+    }
+
+    .contact-methods h3 {
+        padding: 0;
+    }
+
+    .social-links {
+        padding-bottom: 24px;
+    }
+
+@media (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+        flex-direction: column;
+    }
+
+    .store-front {
+        max-width: 100%;
+        padding-bottom: 16px;
+        padding-top: 0;
+    }
+
+    .albums {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-methods {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-methods h3 {
+        padding: 0;
+    }
+
+    .social-links {
+        padding-bottom: 24px;
+    }
 }
