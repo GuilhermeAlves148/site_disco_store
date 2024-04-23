@@ -208,7 +208,6 @@ footer {
         flex-direction: column;
         align-items: center;
         }
-    }
 
     footer {
         background-color: rgb(185, 9, 9);
@@ -223,6 +222,7 @@ footer {
     .social-links {
         padding-bottom: 24px;
     }
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .container {
