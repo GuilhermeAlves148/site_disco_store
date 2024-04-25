@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tilt+Prism&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <title>Disco Store</title>
 </head>
 <body>
@@ -17,13 +18,22 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#about" class="destaque">Sobre a loja</a>
+                        <a href="#about" class="destaque">
+                            <i class="fi fi-rs-shop"></i>
+                            Sobre a loja
+                        </a>
                     </li>
                     <li>
-                        <a href="#contact" class="destaque">Contato</a>
+                        <a href="#catalogue" class="destaque">
+                            <i class="fi fi-rs-record-vinyl"></i>
+                            Catalogo
+                        </a>
                     </li>
                     <li>
-                        <a href="#catalogue" class="destaque">Catalogo</a>
+                        <a href="#contact" class="destaque">
+                            <i class="fi fi-rs-phone-rotary"></i>
+                            Contato
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -33,7 +43,9 @@
         <div class="container">
             <img class="store-front" src="media/discostore.jpg" alt="fachada" />
             <div>
-                <h2 class="destaque">Sobre a loja</h2>
+                <h2 class="destaque">
+                    <i class="fi fi-rs-shop"></i>
+                    Sobre a loja</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, ipsam tenetur nam quo laborum suscipit error dolorum dolor explicabo aut ad animi itaque, numquam eaque aspernatur doloremque recusandae quasi dolorem!
                 </p>
@@ -45,43 +57,53 @@
     </section>
     <section id="catalogue">
         <div class="container">
-            <h2 class="destaque catalogo">Catalogo</h2>
+            <h2 class="destaque catalogo">
+                <i class="fi fi-rs-record-vinyl"></i>
+                Catalogo</h2>
             <h3 class="destaque">Mais populares</h3>
             <ul class="albums">
                 <li>
                     <a href="#" title="Album Michael Jackson - Thriller">
-                        <img src="/media/pop/michaeljackson.jpg" alt="michael_jackson" />
+                        <img src="media/mj.jfif" alt="michael_jackson" />
                     <h4>Michael Jackson - Thriller</h4>
                     <p>
                         R$160,00
                     </p>
+                    <button type="button" class="btn-comprar">Comprar</button>
+                    <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
                     </a>
                 </li>
                 <li>
                     <a href="#" title="Album Metallica - Master of Puppets">
-                        <img src="/media/metal/master of puppets.jpg" alt="metallica" />
+                        <img src="/media/metallica.jfif" alt="metallica" />
                     <h4>Metallica - Master of Puppets</h4>
                     <p>
                         R$175,00
                     </p>
+                    <button type="button" class="btn-comprar">Comprar</button>
+                    <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
                     </a>
                 </li>
                 <li>
                     <a href="#" title="Album Tyler, The Creator - Igor">
-                        <img src="/media/rap/tyler the creator.jpg" alt="igor" />
+                        <img src="/media/tyler.jfif" alt="igor" />
                     <h4>Tyler, The Creator - Igor</h4>
                     <p>
                         R$190,00
                     </p>
+                    <button type="button" class="btn-comprar">Comprar</button>
+                    <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
                     </a>
                 </li>
                 <li>
                     <a href="#" title="Album The Strokes - Room on Fire">
-                        <img src="/media/indie/the strokes.jpg" alt="strokes" />
+                        <img src="media/strokes.jfif" alt="strokes" />
                     <h4>The Strokes - Room on Fire</h4>
                     <p>
                         R$150,00
                     </p>
+                    <button type="button" class="btn-comprar">Comprar</button>
+                    <button type="button" class="btn-carrinho">Adicionar ao carrinho</button>
                     </a>
                 </li>
             </ul>
@@ -89,14 +111,16 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h2 class="destaque">Contato</h2>
+            <h2 class="destaque">
+                <i class="fi fi-rs-phone-rotary"></i>
+                Contato</h2>
             <div class="contact-methods">
                 <div>
                     <h3 class="destaque">Fale conosco</h3>
                     <form>
                         <input type="text" placeholder="Escreva seu nome" required />
                         <input type="email" placeholder="Escreva seu E-mail" required />
-                        <input type="tel" placeholder="Digite seu número de telefone (opcional)" />
+                        <input id="telefone" type="tel" placeholder="Digite seu número de telefone (opcional)" />
                         <textarea placeholder="Sua mensagem" required ></textarea>
                         <button type="submit">enviar</button>
                     </form>
@@ -130,5 +154,9 @@
             &copy; Disco Store - Todos os direitos reservados - 2023
         </p>
     </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="jquery.mask.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
