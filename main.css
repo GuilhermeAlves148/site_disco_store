@@ -12,6 +12,13 @@
     align-items: center;
 }
 
+i {
+    vertical-align: middle;
+}
+
+.icone-header {
+    font-size: 20px;
+}
 
 .title {
     font-family: 'Tilt Prism', cursive;
