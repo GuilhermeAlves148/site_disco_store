@@ -28,9 +28,13 @@ i {
     margin-right: 2px;
 }
 
-.destaque {
+.destaque, .destaque-meio {
     font-family: 'Caprasimo', cursive;
     padding-bottom: 16px;
+}
+
+.destaque-meio {
+    padding-top: 16px;
 }
 
 #about {
