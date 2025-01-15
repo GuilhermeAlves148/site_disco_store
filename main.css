@@ -255,12 +255,10 @@ button {
         padding-top: 0;
     }
 
-    .albums {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+    .albuns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-
     .contact-methods {
         display: flex;
         justify-content: center;
