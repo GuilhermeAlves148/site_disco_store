@@ -255,7 +255,7 @@ button {
         padding-top: 0;
     }
 
-    .albuns {
+    .albums {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
